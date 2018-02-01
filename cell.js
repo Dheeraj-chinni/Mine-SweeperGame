@@ -75,8 +75,7 @@ Cell.prototype.floodFill = function() {
       if (j < 0 || j >= rows) continue;
 
       var neighbor = grid[i][j];
-      // Note the neighbor.bee check was not required.
-      // See issue #184
+      
       if (!neighbor.revealed) {
         neighbor.reveal();
       }
